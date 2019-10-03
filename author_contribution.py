@@ -11,8 +11,8 @@ author_contribution = collections.defaultdict(lambda: [])
 #Main Function
 #file_name = input("Enter compressed KNML file path: ")
 file_name = "2006_Westchester_County_torna.knolml"
-d1 = datetime(2009, 9, 1) 
-d2 = datetime(2011, 1, 1) 
+d1 = datetime.strptime(input("Enter start date as YYYY-MM-DD format: "), '%Y-%m-%d')
+d2 = datetime.strptime(input("Enter start date as YYYY-MM-DD format: "), '%Y-%m-%d')
 
 
 tree = ET.parse(file_name)
@@ -37,7 +37,7 @@ for each in root.iter('Instance'):
 		if 'Contributors' in child.tag:
 			dict_key = revision = child[0].text
 		if 'Body' in child.tag:
-			dict_val = len(child[0].text)
+			dict_val = len(child[0].text.split())
 			#print(dict_key)
 			#print(dict_val)	
 			author_contribution[dict_key].append(dict_val-last_contribution)
