@@ -7,6 +7,8 @@ import nltk
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
 
+author_contribution = collections.defaultdict(lambda: 0)
+
 def max_cosine_similarity(paragraph, revision):
 	s1 = s2 = ""
 	if len(paragraph) < len(revision):
@@ -65,10 +67,13 @@ count = 0
 length = len(root[0].findall('Instance'))
 
 revision_list = []
+author_list = []
 
 for each in root.iter('Instance'):
 	instanceId = int(each.attrib['Id'])
 	for child in each:
+		if 'Contributors' in child.tag:
+			author_list.append(child[0].text)		
 		if 'Body' in child.tag:
 			revision = child[0].text
 			revision = re.sub(r'\*?\{\{[^\}]*\}\}', "", revision)
@@ -78,10 +83,19 @@ for each in root.iter('Instance'):
 			revision_list.append(revision)
 
 print(revision_list[-1])			
-print(len(revision_list), "revisions found")
 paragraph = input("Enter paragraph: ")
 
-for i in range(len(revision_list)):			
-	print("Revision no:", i+1,"Similarity:", max_cosine_similarity(paragraph, revision_list[i]))
+last_val = 0
 
+for i in range(len(revision_list)):			
+	curr_val = max_cosine_similarity(paragraph, revision_list[i])
+	print(author_list[i], curr_val)
+	if last_val == curr_val == 1.0:
+		continue
+	author_contribution[author_list[i]] += curr_val	
+	last_val = curr_val	
+	print("Progress:", i, "/", len(revision_list))
+
+for x in sorted(author_contribution.items() ,  key=lambda x: x[1]):
+	print(x[0], "\n--->", x[1])
 
