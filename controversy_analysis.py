@@ -52,7 +52,7 @@ def analyze(s, s2, num):
 
 	for x in sentenceDict:
 		elements = sentenceDict[x]
-		print("No:", x, "Line:", re.findall(r'\*?\[\[[^\]]*\]\]', elements))
+		#print("No:", x, "Line:", re.findall(r'\*?\[\[[^\]]*\]\]', elements))
 		elements = re.findall(r'\*?\[\[[^\]]*\]\]', elements)
 		for y in elements:
 			wiki_link_dict[y] += 1/(len(elements))
@@ -79,8 +79,8 @@ for each in root.iter('Instance'):
 			#[[]] can is a wikilink
 			#revision = re.sub(r'\*?\[\[[^\]]*\]\]', "", revision)
 			revision = ' '.join(revision.split())
-			print(revision)
-			print()
+			#print(revision)
+			#print()
 			revisionsList.append(revision)
 
 #List of all revisions			
