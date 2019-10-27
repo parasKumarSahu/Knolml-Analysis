@@ -82,7 +82,7 @@ for each in root.iter('Instance'):
 			revision = ' '.join(revision.split())
 			revision_list.append(revision)
 
-print(revision_list[-1])			
+print(revision_list[int(len(revision_list)/2)])			
 paragraph = input("Enter paragraph: ")
 
 last_val = 0
