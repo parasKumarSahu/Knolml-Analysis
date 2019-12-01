@@ -23,6 +23,9 @@ Python3 rank_authors_based_on_para_contr.py
 A wikipedia article represents knowledge about some related topics, like a wikipedia article on IIT Ropar may be talking about placements of IIT Ropar in a particular section. But, in this section there was no information regarding a new branch say Biotechnology which was newly introduced. So, can we write a Python program that can tell that the information regarding placements of Biotechnology is missing from the IIT Ropar wikipedia page? Or in general can we tell that there is a knowledge gap in a wikipedia article?
 
 Steps to Run(Text Segmentation part):-
-1. Download GloVE from http://nlp.stanford.edu/data/glove.6B.zip in the Text-Segmentation folder
-2. Run converter.py, it will convert the file glove.6B.100d.txt which is in GloVe format to word2vec.6B.100d.txt which is in word2vec format so that we can use it with Gensim library of Python.
-3. Finally run 'Python2 segmentart.py [number of disions] [path to input file]', the output file will be generated in the same folder named as Resultn.txt
+1. Supply text to be segmented in input.txt
+2. Run Python3 test.py
+
+Steps to train word2vec (Optional):-
+1. You are already provided with a trained word2vec (wrdvecs-text8.bin), you have to delete it first
+2. Once the trained model is deleted, supply a coprus with name text8 and simply run the code
