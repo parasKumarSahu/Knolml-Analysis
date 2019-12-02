@@ -34,8 +34,7 @@ from tools import get_penalty, get_segments
 from algorithm import split_optimal, split_greedy, get_total
 
 
-book_path = "input2.txt"
-#book_path = "input.txt"
+book_path = "books/GeneralScience.txt"
 segment_len = 30  # segment target length in sentences
 
 with open(book_path, 'rt') as f:
@@ -52,7 +51,7 @@ print('penalty %4.2f' % penalty)
 optimal_segmentation = split_optimal(sentence_vectors, penalty, seg_limit=250)
 segmented_text = get_segments(sentenced_text, optimal_segmentation)
 
-f = open("result.csv", "w")
+f = open("segmentaion_result.csv", "w")
 f.write("index,text\n")
 seg_count = 0
 

@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv('result.csv', error_bad_lines=False);
+data = pd.read_csv('segmentaion_result.csv', error_bad_lines=False);
 data_text = data[['text']]
 data_text['index'] = data_text.index
 documents = data_text
@@ -47,7 +47,7 @@ for k, v in dictionary.iteritems():
     count += 1
 '''
 
-dictionary.filter_extremes(no_below=1, no_above=0.5)
+#dictionary.filter_extremes(no_below=1, no_above=0.5)
 bow_corpus = 0
 if(len(dictionary) != 0):
 	bow_corpus = [dictionary.doc2bow(doc) for doc in processed_docs]
@@ -84,4 +84,20 @@ for bow_doc in bow_corpus:
 	count += 1
 
 print("External Knowledge Gaps:-")
-print(pd.DataFrame(M))
+
+f = open("external_gaps.txt", "w")
+f.write(str(pd.DataFrame(M)))
+no_gaps = 0
+threshold = 1.75
+
+for i in range(len(M)-1):
+	tmp_sum = 0	
+	for j in range(len(M[0])):
+		tmp_sum += abs(M[i+1][j]-M[i][j])
+	if tmp_sum > threshold:
+		no_gaps += 1	
+		print("Gap found between segments", i+1, "and", i+2)
+		f.write("Gap found between segments "+str(i+1)+" and "+str(i+2)+"\n")
+
+print("Total", no_gaps, "Knowledge-gaps found!")
+f.write("Total "+str(no_gaps)+" Knowledge-gaps found!\n")
