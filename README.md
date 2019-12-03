@@ -27,18 +27,9 @@ A wikipedia article represents knowledge about some related topics, like a wikip
 
 Steps to find external knowledge gaps:-
 
-1. Text segmentation:-
-
-Input Format: python3 script_name input_file_name
-
-Example: python3 start_segmentation.py books/AChristmasCarol.txt
-
-2. Segments would be written in segmentaion_result.csv file after that you have to run script for external segmentation which will take this file as input
-
-Input Format: python3 script_name
-
-Example: python3 find_external_gaps.py
-
+1. Text segmentation: Select a book from books folder as input file for segmentation and run python3 start_segmentation.py books/[book_name]
+2. Segments would be written in segmentaion_result.csv file
+3. Now we will do external segmentation using segmentaion_result.csv, run python3 find_external_gaps.py
 3. You can find the External Knowledge gaps in external_gaps.txt file
 
 Steps to train word2vec (Optional):-
