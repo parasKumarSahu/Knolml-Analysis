@@ -4,6 +4,7 @@ import re
 import difflib
 import collections
 from datetime import datetime
+import sys
 
 author_contribution = collections.defaultdict(lambda: [])
 
@@ -36,17 +37,21 @@ for each in root.iter('Instance'):
 		if 'Contributors' in child.tag:
 			dict_key = revision = child[0].text
 		if 'Body' in child.tag:
-			dict_val = len(child[0].text.split())
+			dict_val = 0
+			if len(sys.argv) == 1:
+				dict_val = len(child[0].text.split())
+			elif sys.argv[1] == "--sentences":
+				dict_val = len(re.split('\!|\?|\.', child[0].text))
+			elif sys.argv[1] == "--wikilinks":
+				dict_val = len(re.findall(r'\*?\[\[[^\]]*\]\]', child[0].text))
+			elif sys.argv[1] == "--bytes":
+				dict_val = len(child[0].text.encode('utf-16-le'))
+			elif sys.argv[1] == "--words":
+				dict_val = len(child[0].text.split())
 			#print(dict_key)
 			#print(dict_val)	
 			author_contribution[dict_key].append(dict_val-last_contribution)
 			last_contribution = dict_val
-#List of all revisions			
-#print(revisionsList)
-
-#Sentence Number, modified sentence
-for i in range(1, len(revisionsList)):
-	analyze(revisionsList[i-1].split(), revisionsList[i].split(), i+1)
 
 
 print("\n\n======Authors' Contribution==========\n\n")

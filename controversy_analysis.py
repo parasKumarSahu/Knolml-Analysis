@@ -1,4 +1,3 @@
-#p.py
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
 import re
