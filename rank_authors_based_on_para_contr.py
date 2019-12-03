@@ -6,6 +6,7 @@ import collections
 import nltk
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
+import sys
 
 author_contribution = collections.defaultdict(lambda: 0)
 
@@ -57,8 +58,11 @@ def max_cosine_similarity(paragraph, revision):
 
 
 #Main Function
-#file_name = input("Enter compressed KNML file path: ")
-file_name = "2006_Westchester_County_torna.knolml"
+if len(sys.argv) < 2:
+	print("Input Format: python3 script_name input_file_name")
+	exit()
+	
+file_name = sys.argv[1]
 
 tree = ET.parse(file_name)
 root = tree.getroot()

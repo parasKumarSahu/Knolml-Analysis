@@ -9,10 +9,15 @@ import sys
 author_contribution = collections.defaultdict(lambda: [])
 
 #Main Function
-#file_name = input("Enter compressed KNML file path: ")
-file_name = "2006_Westchester_County_torna.knolml"
-d1 = datetime.strptime(input("Enter start date as YYYY-MM-DD format: "), '%Y-%m-%d')
-d2 = datetime.strptime(input("Enter start date as YYYY-MM-DD format: "), '%Y-%m-%d')
+
+if len(sys.argv) < 5:
+	print("Input Format: python3 script_name input_file_name start_date(YYYY-MM-DD) end_date(YYYY-MM-DD) --flag(sentences/bytes/wikilinks/words)")
+	exit()
+
+file_name = sys.argv[1]
+#file_name = "2006_Westchester_County_torna.knolml"
+d1 = datetime.strptime(sys.argv[2], '%Y-%m-%d')
+d2 = datetime.strptime(sys.argv[3], '%Y-%m-%d')
 
 
 tree = ET.parse(file_name)
@@ -38,15 +43,15 @@ for each in root.iter('Instance'):
 			dict_key = revision = child[0].text
 		if 'Body' in child.tag:
 			dict_val = 0
-			if len(sys.argv) == 1:
-				dict_val = len(child[0].text.split())
-			elif sys.argv[1] == "--sentences":
+			if sys.argv[4] == "--sentences":
 				dict_val = len(re.split('\!|\?|\.', child[0].text))
-			elif sys.argv[1] == "--wikilinks":
+			elif sys.argv[4] == "--wikilinks":
 				dict_val = len(re.findall(r'\*?\[\[[^\]]*\]\]', child[0].text))
-			elif sys.argv[1] == "--bytes":
+			elif sys.argv[4] == "--bytes":
 				dict_val = len(child[0].text.encode('utf-16-le'))
-			elif sys.argv[1] == "--words":
+			elif sys.argv[4] == "--words":
+				dict_val = len(child[0].text.split())
+			else:
 				dict_val = len(child[0].text.split())
 			#print(dict_key)
 			#print(dict_val)	

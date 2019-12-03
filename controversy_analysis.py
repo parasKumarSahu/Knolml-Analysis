@@ -3,6 +3,7 @@ import xml.dom.minidom
 import re
 import difflib
 import collections
+import sys
 
 wiki_link_dict = collections.defaultdict(lambda: 0)
 
@@ -58,8 +59,11 @@ def analyze(s, s2, num):
 
 
 #Main Function
-#file_name = input("Enter compressed KNML file path: ")
-file_name = "2006_Westchester_County_torna.knolml"
+if len(sys.argv) < 2:
+	print("Input Format: python3 script_name input_file_name")
+	exit()
+	
+file_name = sys.argv[1]
 
 tree = ET.parse(file_name)
 root = tree.getroot()
