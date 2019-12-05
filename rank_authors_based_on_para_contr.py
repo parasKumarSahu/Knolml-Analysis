@@ -7,8 +7,11 @@ import nltk
 from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize 
 import sys
+import matplotlib.pyplot as plt
 
 author_contribution = collections.defaultdict(lambda: 0)
+similarity_arr = []
+revision_no_arr = []
 
 def max_cosine_similarity(paragraph, revision):
 	s1 = s2 = ""
@@ -91,15 +94,25 @@ paragraph = input("Enter paragraph: ")
 
 last_val = 0
 
+print("\nRunning...\n")
+
 for i in range(len(revision_list)):			
 	curr_val = max_cosine_similarity(paragraph, revision_list[i])
-	print(author_list[i], curr_val)
-	if last_val == curr_val == 1.0:
+	print(author_list[i], "Similarity:", curr_val, "Progress:", i, "/", len(revision_list))
+	similarity_arr.append(curr_val)
+	revision_no_arr.append(i+1)
+	if last_val == 1.0 and curr_val == 1.0:
 		continue
-	author_contribution[author_list[i]] += curr_val	
+	if author_contribution[author_list[i]] == 0 or author_contribution[author_list[i]] > curr_val: 
+		author_contribution[author_list[i]] = curr_val	
 	last_val = curr_val	
-	print("Progress:", i, "/", len(revision_list))
+
+print("\nContributions of author(s) to the given paragraph:\n")
 
 for x in sorted(author_contribution.items() ,  key=lambda x: x[1]):
 	print(x[0], "\n--->", x[1])
 
+plt.plot(revision_no_arr, similarity_arr)
+plt.xlabel("Revision number")
+plt.ylabel("Similarity value")
+plt.show()
