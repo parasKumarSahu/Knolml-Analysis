@@ -1,0 +1,182 @@
+Filename: 1604471$#@Metalloid.txt
+Sentences: 420
+Segments: 13
+Knowledge Gaps: 9
+Flesch Kincaid Grade Values: [244.3, 21.7, 240.4, 130.5, 160.5, 178.8, 261.1, 377.7, 185.1, 1717.0, 129.3, 78.6, 111.7]
+Flesch Kincaid Grade CV: 1.421773088756346
+Coleman Liau Index Values: [16.22, 19.15, 15.58, 17.96, 16.22, 15.64, 14.65, 16.1, 15.52, 13.08, 10.59, 13.66, 11.98]
+Coleman Liau Index CV: 0.14829671346118778
+Automated Readability Index Values: [310.6, 20.9, 305.1, 164.5, 203.1, 226.1, 332.3, 483.0, 234.0, 2199.0, 163.0, 99.2, 141.6]
+Automated Readability Index CV: 1.433159150824097
+Edits: 2667
+Bytes: 244108
+
+Filename: 22562730$#@The Beatles.txt
+Sentences: 522
+Segments: 23
+Knowledge Gaps: 21
+Flesch Kincaid Grade Values: [148.8, 63.3, 363.3, 138.6, 39.9, 549.7, 380.0, 123.8, 144.5, 205.7, 185.0, 437.0, 53.2, 172.9, 110.9, 698.7, 862.5, 531.4, 89.9, 295.8, 192.8, 346.1, 87.1]
+Flesch Kincaid Grade CV: 0.7960496796646358
+Coleman Liau Index Values: [13.84, 9.77, 12.62, 12.21, 9.77, 11.58, 13.49, 9.49, 10.94, 12.33, 11.87, 13.43, 10.35, 11.4, 13.9, 11.92, 12.16, 14.36, 9.43, 14.19, 11.63, 11.4, 13.32]
+Coleman Liau Index CV: 0.12517491713070614
+Automated Readability Index Values: [189.1, 79.6, 464.6, 176.3, 49.6, 702.8, 485.4, 156.6, 182.8, 262.4, 235.5, 558.3, 67.0, 219.7, 140.7, 894.1, 1104.3, 680.1, 113.1, 377.9, 245.3, 441.7, 109.7]
+Automated Readability Index CV: 0.800099840594576
+Edits: 24035
+Bytes: 192282
+
+Filename: 26354$#@Franklin Peale.txt
+Sentences: 377
+Segments: 20
+Knowledge Gaps: 16
+Flesch Kincaid Grade Values: [196.7, 175.3, 87.1, 254.8, 45.0, 155.0, 416.7, 22.0, 291.9, 22.0, 210.4, 70.8, 490.4, 321.5, 127.3, 58.6, 156.6, 269.7, 42.7, 28.6]
+Flesch Kincaid Grade CV: 0.7659180882539832
+Coleman Liau Index Values: [12.1, 10.94, 12.21, 11.81, 9.54, 13.14, 12.04, 14.17, 12.79, 10.69, 13.43, 11.92, 11.69, 12.56, 11.98, 10.82, 12.97, 13.08, 13.89, 12.67]
+Coleman Liau Index CV: 0.09076475395987259
+Automated Readability Index Values: [250.7, 222.3, 110.3, 325.0, 55.9, 196.6, 532.7, 25.9, 373.3, 24.6, 267.8, 89.3, 626.9, 411.1, 161.6, 74.4, 198.4, 343.5, 51.9, 35.9]
+Automated Readability Index CV: 0.7729096221657575
+Edits: 428
+Bytes: 69225
+
+Filename: 427823$#@Tawny owl.txt
+Sentences: 739
+Segments: 28
+Knowledge Gaps: 21
+Flesch Kincaid Grade Values: [227.9, 266.9, 249.0, 383.5, 187.8, 182.3, 171.8, 109.7, 348.4, 159.3, 207.6, 297.3, 329.7, 417.1, 451.8, 236.9, 665.1, 89.9, 629.6, 751.7, 116.8, 187.7, 233.4, 497.8, 209.6, 745.4, 478.3, 64.5]
+Flesch Kincaid Grade CV: 0.6042338099243714
+Coleman Liau Index Values: [12.33, 12.56, 5.02, 9.89, 12.85, 12.62, 10.36, 13.26, 14.01, 15.06, 13.49, 11.11, 8.39, 10.65, 11.11, 9.14, 10.94, 9.2, 11.63, 11.98, 12.97, 9.78, 7.11, 11.92, 8.85, 10.07, 13.08, 9.37]
+Coleman Liau Index CV: 0.19788856381633513
+Automated Readability Index Values: [290.9, 341.1, 316.5, 489.9, 238.3, 232.6, 217.3, 141.7, 445.3, 203.6, 265.9, 378.9, 419.7, 533.5, 578.4, 302.8, 851.8, 112.9, 805.3, 962.1, 147.4, 238.8, 296.7, 636.6, 267.6, 954.1, 611.0, 82.2]
+Automated Readability Index CV: 0.6063849091836057
+Edits: 900
+Bytes: 250691
+
+Filename: 43655$#@Si Ronda.txt
+Sentences: 26
+Segments: 1
+Knowledge Gaps: 0
+Flesch Kincaid Grade Values: [11.0]
+Flesch Kincaid Grade CV: 0.0
+Coleman Liau Index Values: [11.84]
+Coleman Liau Index CV: 0.0
+Automated Readability Index Values: [14.3]
+Automated Readability Index CV: 0.0
+Edits: 188
+Bytes: 11251
+
+Filename: 46035$#@Stamata Revithi.txt
+Sentences: 54
+Segments: 3
+Knowledge Gaps: 2
+Flesch Kincaid Grade Values: [399.5, 148.4, 84.0]
+Flesch Kincaid Grade CV: 0.6462045423748436
+Coleman Liau Index Values: [11.23, 10.36, 11.05]
+Coleman Liau Index CV: 0.034463847903038046
+Automated Readability Index Values: [511.5, 188.8, 106.9]
+Automated Readability Index CV: 0.6491198241010916
+Edits: 295
+Bytes: 24990
+
+Filename: 486385$#@Jo Stafford.txt
+Sentences: 219
+Segments: 7
+Knowledge Gaps: 5
+Flesch Kincaid Grade Values: [230.3, 638.6, 158.9, 824.6, 177.6, 161.6, 82.5]
+Flesch Kincaid Grade CV: 0.815839947703883
+Coleman Liau Index Values: [11.4, 11.63, 11.58, 12.21, 12.16, 11.58, 11.92]
+Coleman Liau Index CV: 0.024758811291097752
+Automated Readability Index Values: [294.7, 818.3, 201.8, 1055.8, 226.3, 206.8, 104.1]
+Automated Readability Index CV: 0.818293208364312
+Edits: 1580
+Bytes: 77569
+
+Filename: 4978$#@SS Washingtonian.txt
+Sentences: 1
+Segments: 1
+Knowledge Gaps: 0
+Flesch Kincaid Grade Values: [16.2]
+Flesch Kincaid Grade CV: 0.0
+Coleman Liau Index Values: [27.55]
+Coleman Liau Index CV: 0.0
+Automated Readability Index Values: [29.2]
+Automated Readability Index CV: 0.0
+Edits: 8
+Bytes: 266
+
+Filename: 4th Arkansas Field Battery.txt
+Sentences: 68
+Segments: 1
+Knowledge Gaps: 0
+Flesch Kincaid Grade Values: [757.2]
+Flesch Kincaid Grade CV: 0.0
+Coleman Liau Index Values: [12.68]
+Coleman Liau Index CV: 0.0
+Automated Readability Index Values: [969.7]
+Automated Readability Index CV: 0.0
+Edits: 94
+Bytes: 24580
+
+Filename: 4th Arkansas Infantry Regiment.txt
+Sentences: 101
+Segments: 5
+Knowledge Gaps: 3
+Flesch Kincaid Grade Values: [285.7, 492.0, 120.7, 221.3, 202.2]
+Flesch Kincaid Grade CV: 0.4743347285915835
+Coleman Liau Index Values: [13.08, 12.79, 13.95, 11.81, 13.55]
+Coleman Liau Index CV: 0.05600528740156228
+Automated Readability Index Values: [364.0, 628.3, 153.2, 282.0, 257.4]
+Automated Readability Index CV: 0.4761544731744668
+Edits: 176
+Bytes: 46766
+
+Filename: 4th Regiment, Arkansas State Troops.txt
+Sentences: 36
+Segments: 1
+Knowledge Gaps: 0
+Flesch Kincaid Grade Values: [14.3]
+Flesch Kincaid Grade CV: 0.0
+Coleman Liau Index Values: [12.89]
+Coleman Liau Index CV: 0.0
+Automated Readability Index Values: [18.2]
+Automated Readability Index CV: 0.0
+Edits: 74
+Bytes: 15302
+
+Filename: 5th Arkansas Field Battery.txt
+Sentences: 125
+Segments: 7
+Knowledge Gaps: 4
+Flesch Kincaid Grade Values: [116.0, 85.2, 21.6, 130.0, 541.9, 161.2, 106.3]
+Flesch Kincaid Grade CV: 0.9552198748163605
+Coleman Liau Index Values: [13.37, 10.07, 16.03, 9.72, 11.92, 11.52, 15.0]
+Coleman Liau Index CV: 0.17707079276009924
+Automated Readability Index Values: [146.8, 107.6, 26.9, 164.8, 693.1, 204.8, 134.1]
+Automated Readability Index CV: 0.9626178505341046
+Edits: 98
+Bytes: 29316
+
+Filename: 61570$#@Tahiti rail.txt
+Sentences: 84
+Segments: 3
+Knowledge Gaps: 2
+Flesch Kincaid Grade Values: [436.2, 133.9, 170.6]
+Flesch Kincaid Grade CV: 0.5455294740108221
+Coleman Liau Index Values: [12.56, 11.75, 12.45]
+Coleman Liau Index CV: 0.02927630598441024
+Automated Readability Index Values: [558.1, 172.9, 217.5]
+Automated Readability Index CV: 0.5441400194879082
+Edits: 189
+Bytes: 19873
+
+Filename: 90541$#@Hurricane Irene (2005).txt
+Sentences: 28
+Segments: 1
+Knowledge Gaps: 0
+Flesch Kincaid Grade Values: [15.4]
+Flesch Kincaid Grade CV: 0.0
+Coleman Liau Index Values: [12.78]
+Coleman Liau Index CV: 0.0
+Automated Readability Index Values: [18.9]
+Automated Readability Index CV: 0.0
+Edits: 345
+Bytes: 9903
+
