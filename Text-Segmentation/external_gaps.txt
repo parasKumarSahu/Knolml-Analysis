@@ -1,5 +1,113 @@
-          0  1         2
-0  0.000000  0  0.996715
-1  0.997068  0  0.000000
-2  0.999136  0  0.000000Gap found between segments 1 and 2
-Total 1 Knowledge-gaps found!
+     0    1    2         3        4    5    6    7    8    9    10   11        12   13   14   ...  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117
+0    0.0    0  0.0  0.000000  0.06248  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+1    0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+2    0.0    0  0.0  0.993208  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+3    0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+4    0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+..   ...  ...  ...       ...      ...  ...  ...  ...  ...  ...  ...  ...       ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...  ...
+113  0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+114  0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+115  0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.902894  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+116  0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+117  0.0    0  0.0  0.000000  0.00000  0.0    0  0.0  0.0    0  0.0    0  0.000000  0.0  0.0  ...  0.0  0.0  0.0  0.0    0    0  0.0    0    0  0.0  0.0  0.0  0.0  0.0    0
+
+[118 rows x 118 columns]Gap found between segments 1 and 2
+Gap found between segments 2 and 3
+Gap found between segments 3 and 4
+Gap found between segments 4 and 5
+Gap found between segments 5 and 6
+Gap found between segments 6 and 7
+Gap found between segments 7 and 8
+Gap found between segments 8 and 9
+Gap found between segments 9 and 10
+Gap found between segments 10 and 11
+Gap found between segments 11 and 12
+Gap found between segments 12 and 13
+Gap found between segments 13 and 14
+Gap found between segments 14 and 15
+Gap found between segments 15 and 16
+Gap found between segments 18 and 19
+Gap found between segments 19 and 20
+Gap found between segments 20 and 21
+Gap found between segments 21 and 22
+Gap found between segments 22 and 23
+Gap found between segments 25 and 26
+Gap found between segments 26 and 27
+Gap found between segments 27 and 28
+Gap found between segments 28 and 29
+Gap found between segments 29 and 30
+Gap found between segments 30 and 31
+Gap found between segments 31 and 32
+Gap found between segments 34 and 35
+Gap found between segments 35 and 36
+Gap found between segments 36 and 37
+Gap found between segments 37 and 38
+Gap found between segments 38 and 39
+Gap found between segments 39 and 40
+Gap found between segments 40 and 41
+Gap found between segments 41 and 42
+Gap found between segments 42 and 43
+Gap found between segments 43 and 44
+Gap found between segments 44 and 45
+Gap found between segments 45 and 46
+Gap found between segments 46 and 47
+Gap found between segments 47 and 48
+Gap found between segments 49 and 50
+Gap found between segments 51 and 52
+Gap found between segments 52 and 53
+Gap found between segments 53 and 54
+Gap found between segments 54 and 55
+Gap found between segments 56 and 57
+Gap found between segments 57 and 58
+Gap found between segments 58 and 59
+Gap found between segments 59 and 60
+Gap found between segments 60 and 61
+Gap found between segments 61 and 62
+Gap found between segments 62 and 63
+Gap found between segments 64 and 65
+Gap found between segments 66 and 67
+Gap found between segments 67 and 68
+Gap found between segments 68 and 69
+Gap found between segments 69 and 70
+Gap found between segments 70 and 71
+Gap found between segments 71 and 72
+Gap found between segments 72 and 73
+Gap found between segments 73 and 74
+Gap found between segments 74 and 75
+Gap found between segments 78 and 79
+Gap found between segments 79 and 80
+Gap found between segments 80 and 81
+Gap found between segments 81 and 82
+Gap found between segments 83 and 84
+Gap found between segments 84 and 85
+Gap found between segments 85 and 86
+Gap found between segments 86 and 87
+Gap found between segments 87 and 88
+Gap found between segments 88 and 89
+Gap found between segments 89 and 90
+Gap found between segments 91 and 92
+Gap found between segments 92 and 93
+Gap found between segments 93 and 94
+Gap found between segments 94 and 95
+Gap found between segments 95 and 96
+Gap found between segments 96 and 97
+Gap found between segments 98 and 99
+Gap found between segments 99 and 100
+Gap found between segments 100 and 101
+Gap found between segments 101 and 102
+Gap found between segments 102 and 103
+Gap found between segments 103 and 104
+Gap found between segments 104 and 105
+Gap found between segments 105 and 106
+Gap found between segments 106 and 107
+Gap found between segments 107 and 108
+Gap found between segments 108 and 109
+Gap found between segments 109 and 110
+Gap found between segments 110 and 111
+Gap found between segments 112 and 113
+Gap found between segments 113 and 114
+Gap found between segments 114 and 115
+Gap found between segments 115 and 116
+Gap found between segments 116 and 117
+Gap found between segments 117 and 118
+Total 99 Knowledge-gaps found!

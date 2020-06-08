@@ -33,7 +33,7 @@ sentence_analyzer = nltk.data.load('tokenizers/punkt/english.pickle')
 
 segment_len = 30  # segment target length in sentences
 
-with open(book_path, 'rt') as f:
+with open(book_path, 'rt', encoding="utf8") as f:
     text = f.read().replace('\n', '¤')  # punkt tokenizer handles newlines not so nice
 
 sentenced_text = sentence_analyzer.tokenize(text)
@@ -47,7 +47,7 @@ print('penalty %4.2f' % penalty)
 optimal_segmentation = split_optimal(sentence_vectors, penalty, seg_limit=250)
 segmented_text = get_segments(sentenced_text, optimal_segmentation)
 
-f = open("segmentaion_result.csv", "w")
+f = open("segmentaion_result.csv", "w", encoding="utf8")
 f.write("index,text\n")
 seg_count = 0
 
