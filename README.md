@@ -22,7 +22,7 @@ Input Format: python3 script_name input_file_name
 
 Example: python3 rank_authors_based_on_para_contr.py 2006_Westchester_County_torna.knolml
 
-## Analysis4: Finding knowledge gaps in a wikipedia article
+## Analysis4: Finding external knowledge gaps in a wikipedia article
 A wikipedia article represents knowledge about some related topics, like a wikipedia article on IIT Ropar may be talking about placements of IIT Ropar in a particular section. But, in this section there was no information regarding a new branch say Biotechnology which was newly introduced. So, can we write a Python program that can tell that the information regarding placements of Biotechnology is missing from the IIT Ropar wikipedia page? Or in general can we tell that there is a knowledge gap in a wikipedia article?
 
 Steps to find external knowledge gaps:-
@@ -35,3 +35,19 @@ Steps to find external knowledge gaps:-
 Steps to train word2vec (Optional):-
 1. You are already provided with a trained word2vec (wrdvecs-text8.bin), you have to delete it first
 2. Once the trained model is deleted, supply a coprus with name text8 and simply run the code
+
+## Analysis5: Finding internal knowledge gap in a wikipedia article
+Internal Knowledge Gap arise due to difficulty in understanding of an article. We define various readability prameter and compute them for thousands of articles to study how these parameters affect the overall readability of a wikipedia article.
+
+Steps to download dataset:-
+
+1. Extract input_titles and output_articles zip files in Wiki Dowloder from Titles folder, output_articles folder already contains the dataset, to download fresh articles run download.py.
+2. Extract featured.zip file in Wiki Featured Articles Downloader folder, featured folder already contains the dataset, to download fresh articles run download.py.
+3. The featured articles have name with number of page views as prefix, so you can select most viewed featured article by sorting them by file name.
+4. Finally you will have GA, B, C, Start, Stub and featured(top 1000 using previous step) as the dataset.
+
+Steps to calaculate readability parameters:-
+1. Copy the dataset(folders with articles) to Internal Knowledge Gaps/Input folder.
+2. Run python3 find_readability_params.py [folder name(B/C/GA/...)]
+3. The output would be generated in the Output folder with filename same as the folder name in previous step.
+
